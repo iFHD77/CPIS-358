@@ -14,7 +14,7 @@
 
     <a href="about.html">
     <img src="events.jpg" alt="Student Events"
-         width="500" height="300">
+         width="400" height="300">
 </a>
 
 
@@ -26,7 +26,7 @@
         <li><a href="about.html">About Us</a></li>
         <li class="dropdown">Explore 
             <ul>
-                <li><a href="about.html">Why Use Us</a></li>
+                <li><a href="index.html#why">Why Use Us</a></li>
                 <li><a href="index.html#events">Upcoming Events</a></li>
             </ul>
         </li>
@@ -36,29 +36,30 @@
     <h2>Create Account</h2>
 	
     <form method="post">
-<p>
-        <label for="ID">Student ID:</label>
-        <input type="text" id="ID" name="ID">
+        <p>
+    <label for="ID">Student ID:</label>
+    <input type="text" id="ID" name="ID" placeholder="Enter ID"
+           maxlength="7" pattern="[0-9]{7}" autofocus required>
     </p>
 		
     <p>
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" placeholder="Full Name">
     </p>
 
     <p>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="Email Address">
     </p>
 
     <p>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password" placeholder="password">
     </p>
 
     <p>
         <label for="confirm">Confirm Password:</label>
-        <input type="password" id="confirm" name="confirm">
+        <input type="password" id="confirm" name="confirm" placeholder="Confirm password">
     </p>
 
     <p>
@@ -70,15 +71,20 @@
     		<option value="career">Career Events</option>
    		<option value="activities">Student Activities</option>
 	</select>
+    <p>
+    <input type="checkbox" id="terms" name="terms" value="agree" checked>
+    <label for="terms">I agree to receive event updates</label>
+</p>
     </p>
 
     <input type="submit" value="Sign Up">
     <input type="reset" value="Clear">
+
     <p>Already have an account? <a href="login.html">Login</a></p>
     </form>
-
-</body>
 <footer>
     <p>&copy; 2026 Student Events - Group 6  <a href="#top">Back to Top</a></p>
 </footer>
+</body>
+
 </html>
