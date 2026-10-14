@@ -14,7 +14,6 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
     padding: 5px;
 }
 
@@ -97,12 +96,10 @@ input, select {
     padding: 8px;
 }
 
-
-
 nav a:hover {
     background-color: white;
     color: #2c3e50;
-    
+
 }
 
 h1 {
@@ -111,4 +108,54 @@ h1 {
 
 section, form {
     border-radius: 10px;
+}
+section, form {
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    color: #555555;
+    margin-top: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    color: white;
+    margin-right: 20px;
+}
+.dropdown ul {
+    display: none;            
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12em;
+    padding-top: 15px;
+    background-color: #2c3e50;
+    box-shadow: 0 4px 8px gray;
+    z-index: 3;
+}               
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown ul li {
+    display: block;
+    margin: 0;
+    padding: 8px;
+}
+
+.dropdown ul li:hover {
+    background-color: PowderBlue;
+}
+
+caption {
+    font-weight: bold;
+    padding: 8px;
 }
