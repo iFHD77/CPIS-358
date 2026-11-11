@@ -9,6 +9,8 @@
 
        <link rel="stylesheet" href="style.css"> 
 
+    <script type="text/javascript" src="script.js"></script>
+
        <style type="text/css">
     .about-note {
         color: #555555;
@@ -22,10 +24,18 @@
 
     <h1 style="border-bottom:2px solid #2c3e50;">About Us</h1>
 
-    <a href="about.html">
-    <img src="events.jpg" alt="Student Events"
-         width="400" height="300">
-      </a>
+    <!-- project image linked to About Us with an image map -->
+    <div class="image-box" onmouseover="highlightPicture()" onmouseout="restorePicture()">
+
+        <img id="eventImage" src="events.jpg" alt="Student Events" width="400" height="300" usemap="#eventsmap">
+
+        <span class="event-badge" id="badge">Student Events</span>
+
+        <map name="eventsmap">
+            <area shape="rect" coords="0,0,400,300" href="about.html" alt="About Us">
+        </map>
+
+    </div>
 
 
     <nav>
@@ -36,7 +46,7 @@
         <li><a href="about.html">About Us</a></li>
         <li class="dropdown">Explore 
             <ul>
-                <li><a href=index.html#why>Why Use Us</a></li>
+                <li><a href="index.html#why">Why Use Us</a></li>
                 <li><a href="index.html#events">Upcoming Events</a></li>
             </ul>
         </li>
