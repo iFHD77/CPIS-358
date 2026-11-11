@@ -10,12 +10,13 @@
 
 <body>
 
-    <h1>Student Events - Sign Up</h1>
+    <h1 id="top">Student Events - Sign Up</h1>
 
-    <a href="about.html">
-    <img src="events.jpg" alt="Student Events"
-         width="400" height="300">
-</a>
+    <<img src="events.jpg" alt="Student Events" width="400" height="300" usemap="#eventsmap">
+
+<map name="eventsmap">
+    <area shape="rect" coords="0,0,400,300" href="about.html" alt="About Us">
+</map>
 
 
     <nav>
@@ -72,7 +73,7 @@
    		<option value="activities">Student Activities</option>
 	</select>
     <p>
-    <input type="checkbox" id="terms" name="terms" value="agree" checked>
+    <input type="checkbox" id="terms" name="terms" value="agree">
     <label for="terms">I agree to receive event updates</label>
 </p>
     </p>
