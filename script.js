@@ -73,6 +73,10 @@ function validateSignup(){
 } 
 
 function completeSignup(){
+    if (validateSignup() == false){
+        return false;
+    }
+    
     var name = document.forms["signupForm"]["name"].value;
     var category = document.forms["signupForm"]["category"].value;
     var suggestion;
