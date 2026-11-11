@@ -142,3 +142,15 @@ function clearLogin(){
     restoreField(document.getElementById("email"));
     restoreField(document.getElementById("password"));
 }
+
+
+function showEventDetails(eventName, eventDate, eventLocation){
+
+    window.alert(
+        "Event: " + eventName +
+        "\nDate: " + eventDate +
+        "\nLocation: " + eventLocation
+    );
+
+}
+
