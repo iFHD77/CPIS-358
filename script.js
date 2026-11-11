@@ -26,12 +26,12 @@ function showMessage(text, color){
     document.getElementById("formMessage").style.fontWeight = "bold";
 } 
 
-function showError(text, color){
+function showError(fieldId, text){
     window.alert(text);
     showMessage(text, "red");
     document.getElementById(fieldId).style.background = "#fadbd8";
     return false;
-} 
+}
 
 function validateSignup(){
     var id = document.forms["signupForm"]["ID"].value;
@@ -122,6 +122,11 @@ function validateLogin(){
 } 
 
 function completeLogin(){
+
+    if (validateLogin() == false){
+        return false;
+    }
+
     var email = document.forms["loginForm"]["email"].value;
 
     showMessage("Welcome back, " + email + "!", "green");
